@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EB90F9825E332200045E0EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB90F9725E332200045E0EB /* AppDelegate.swift */; };
+		7EB90F9A25E332200045E0EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB90F9925E332200045E0EB /* SceneDelegate.swift */; };
+		7EB90F9C25E332200045E0EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB90F9B25E332200045E0EB /* ViewController.swift */; };
+		7EB90F9F25E332200045E0EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB90F9D25E332200045E0EB /* Main.storyboard */; };
+		7EB90FA125E332220045E0EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB90FA025E332220045E0EB /* Assets.xcassets */; };
+		7EB90FA425E332220045E0EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB90FA225E332220045E0EB /* LaunchScreen.storyboard */; };
+		7EB90FC225E332F30045E0EB /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB90FC025E332F30045E0EB /* UIImageView.swift */; };
+		7EB90FC325E332F30045E0EB /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB90FC125E332F30045E0EB /* OverlayView.swift */; };
+		B62E6FE15747FD3451229E18 /* Pods_GoogleMLKit_ObjectDetection_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FCD057C85D59DFE41751C /* Pods_GoogleMLKit_ObjectDetection_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		394051D221EA1356A60772B2 /* Pods-GoogleMLKit-ObjectDetection-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMLKit-ObjectDetection-iOS.debug.xcconfig"; path = "Target Support Files/Pods-GoogleMLKit-ObjectDetection-iOS/Pods-GoogleMLKit-ObjectDetection-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7EB90F9425E332200045E0EB /* GoogleMLKit-ObjectDetection-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoogleMLKit-ObjectDetection-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB90F9725E332200045E0EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EB90F9925E332200045E0EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7EB90F9B25E332200045E0EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EB90F9E25E332200045E0EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EB90FA025E332220045E0EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EB90FA325E332220045E0EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EB90FA525E332220045E0EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB90FC025E332F30045E0EB /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		7EB90FC125E332F30045E0EB /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		91247F63097759E46AD3835E /* Pods-GoogleMLKit-ObjectDetection-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMLKit-ObjectDetection-iOS.release.xcconfig"; path = "Target Support Files/Pods-GoogleMLKit-ObjectDetection-iOS/Pods-GoogleMLKit-ObjectDetection-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C72FCD057C85D59DFE41751C /* Pods_GoogleMLKit_ObjectDetection_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMLKit_ObjectDetection_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EB90F9125E332200045E0EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62E6FE15747FD3451229E18 /* Pods_GoogleMLKit_ObjectDetection_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51B20AE3AE0009A7E1AA238B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				394051D221EA1356A60772B2 /* Pods-GoogleMLKit-ObjectDetection-iOS.debug.xcconfig */,
+				91247F63097759E46AD3835E /* Pods-GoogleMLKit-ObjectDetection-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7EB90F8B25E332200045E0EB = {
+			isa = PBXGroup;
+			children = (
+				7EB90F9625E332200045E0EB /* GoogleMLKit-ObjectDetection-iOS */,
+				7EB90F9525E332200045E0EB /* Products */,
+				51B20AE3AE0009A7E1AA238B /* Pods */,
+				B34837F9D3DD46AFD8F883D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7EB90F9525E332200045E0EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EB90F9425E332200045E0EB /* GoogleMLKit-ObjectDetection-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EB90F9625E332200045E0EB /* GoogleMLKit-ObjectDetection-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7EB90F9725E332200045E0EB /* AppDelegate.swift */,
+				7EB90F9925E332200045E0EB /* SceneDelegate.swift */,
+				7EB90F9B25E332200045E0EB /* ViewController.swift */,
+				7EB90FC125E332F30045E0EB /* OverlayView.swift */,
+				7EB90FC025E332F30045E0EB /* UIImageView.swift */,
+				7EB90F9D25E332200045E0EB /* Main.storyboard */,
+				7EB90FA025E332220045E0EB /* Assets.xcassets */,
+				7EB90FA225E332220045E0EB /* LaunchScreen.storyboard */,
+				7EB90FA525E332220045E0EB /* Info.plist */,
+			);
+			path = "GoogleMLKit-ObjectDetection-iOS";
+			sourceTree = "<group>";
+		};
+		B34837F9D3DD46AFD8F883D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C72FCD057C85D59DFE41751C /* Pods_GoogleMLKit_ObjectDetection_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EB90F9325E332200045E0EB /* GoogleMLKit-ObjectDetection-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EB90FA825E332220045E0EB /* Build configuration list for PBXNativeTarget "GoogleMLKit-ObjectDetection-iOS" */;
+			buildPhases = (
+				A7187C22CD4632DF59B6D3F0 /* [CP] Check Pods Manifest.lock */,
+				7EB90F9025E332200045E0EB /* Sources */,
+				7EB90F9125E332200045E0EB /* Frameworks */,
+				7EB90F9225E332200045E0EB /* Resources */,
+				A0A35078A5F182D68C76CD56 /* [CP] Embed Pods Frameworks */,
+				AEA30117BA69AF58A82148DC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoogleMLKit-ObjectDetection-iOS";
+			productName = "GoogleMLKit-ObjectDetection-iOS";
+			productReference = 7EB90F9425E332200045E0EB /* GoogleMLKit-ObjectDetection-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EB90F8C25E332200045E0EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7EB90F9325E332200045E0EB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 7EB90F8F25E332200045E0EB /* Build configuration list for PBXProject "GoogleMLKit-ObjectDetection-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EB90F8B25E332200045E0EB;
+			productRefGroup = 7EB90F9525E332200045E0EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EB90F9325E332200045E0EB /* GoogleMLKit-ObjectDetection-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EB90F9225E332200045E0EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB90FA425E332220045E0EB /* LaunchScreen.storyboard in Resources */,
+				7EB90FA125E332220045E0EB /* Assets.xcassets in Resources */,
+				7EB90F9F25E332200045E0EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0A35078A5F182D68C76CD56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMLKit-ObjectDetection-iOS/Pods-GoogleMLKit-ObjectDetection-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMLKit-ObjectDetection-iOS/Pods-GoogleMLKit-ObjectDetection-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleMLKit-ObjectDetection-iOS/Pods-GoogleMLKit-ObjectDetection-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7187C22CD4632DF59B6D3F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleMLKit-ObjectDetection-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEA30117BA69AF58A82148DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMLKit-ObjectDetection-iOS/Pods-GoogleMLKit-ObjectDetection-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMLKit-ObjectDetection-iOS/Pods-GoogleMLKit-ObjectDetection-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleMLKit-ObjectDetection-iOS/Pods-GoogleMLKit-ObjectDetection-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EB90F9025E332200045E0EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB90FC225E332F30045E0EB /* UIImageView.swift in Sources */,
+				7EB90F9C25E332200045E0EB /* ViewController.swift in Sources */,
+				7EB90F9825E332200045E0EB /* AppDelegate.swift in Sources */,
+				7EB90F9A25E332200045E0EB /* SceneDelegate.swift in Sources */,
+				7EB90FC325E332F30045E0EB /* OverlayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7EB90F9D25E332200045E0EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EB90F9E25E332200045E0EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EB90FA225E332220045E0EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EB90FA325E332220045E0EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EB90FA625E332220045E0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EB90FA725E332220045E0EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EB90FA925E332220045E0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 394051D221EA1356A60772B2 /* Pods-GoogleMLKit-ObjectDetection-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q6SDS7WH9;
+				INFOPLIST_FILE = "GoogleMLKit-ObjectDetection-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Daisuke-TONOSAKI.GoogleMLKit-ObjectDetection-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EB90FAA25E332220045E0EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91247F63097759E46AD3835E /* Pods-GoogleMLKit-ObjectDetection-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Q6SDS7WH9;
+				INFOPLIST_FILE = "GoogleMLKit-ObjectDetection-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Daisuke-TONOSAKI.GoogleMLKit-ObjectDetection-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EB90F8F25E332200045E0EB /* Build configuration list for PBXProject "GoogleMLKit-ObjectDetection-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EB90FA625E332220045E0EB /* Debug */,
+				7EB90FA725E332220045E0EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EB90FA825E332220045E0EB /* Build configuration list for PBXNativeTarget "GoogleMLKit-ObjectDetection-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EB90FA925E332220045E0EB /* Debug */,
+				7EB90FAA25E332220045E0EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EB90F8C25E332200045E0EB /* Project object */;
+}

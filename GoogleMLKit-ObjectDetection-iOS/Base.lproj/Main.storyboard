@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoogleMLKit_ObjectDetection_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9o1-wn-rsT">
+                                <rect key="frame" x="10" y="94" width="394" height="758"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pRt-ai-SoS">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="758"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kds-Nj-4ze" customClass="OverlayView" customModule="GoogleMLKit_ObjectDetection_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="758"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Kds-Nj-4ze" secondAttribute="trailing" id="1hX-8H-in8"/>
+                                    <constraint firstItem="pRt-ai-SoS" firstAttribute="leading" secondItem="9o1-wn-rsT" secondAttribute="leading" id="OR8-LP-Wg9"/>
+                                    <constraint firstItem="pRt-ai-SoS" firstAttribute="top" secondItem="9o1-wn-rsT" secondAttribute="top" id="Rx8-5g-4nm"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kds-Nj-4ze" secondAttribute="bottom" id="bIm-lB-tvq"/>
+                                    <constraint firstItem="Kds-Nj-4ze" firstAttribute="leading" secondItem="9o1-wn-rsT" secondAttribute="leading" id="fqM-bT-MST"/>
+                                    <constraint firstAttribute="trailing" secondItem="pRt-ai-SoS" secondAttribute="trailing" id="o2W-a1-LNU"/>
+                                    <constraint firstItem="Kds-Nj-4ze" firstAttribute="top" secondItem="9o1-wn-rsT" secondAttribute="top" id="tkb-qI-1OL"/>
+                                    <constraint firstAttribute="bottom" secondItem="pRt-ai-SoS" secondAttribute="bottom" id="x3F-t3-fgn"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDo-nM-9Xi">
+                                <rect key="frame" x="152" y="54" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="WwZ-6D-r1K"/>
+                                    <constraint firstAttribute="height" constant="30" id="wbq-3H-IBC"/>
+                                </constraints>
+                                <state key="normal" title="Select Image..."/>
+                                <connections>
+                                    <action selector="selectImageAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBW-7N-i1J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZDo-nM-9Xi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HIb-KK-QeP"/>
+                            <constraint firstItem="9o1-wn-rsT" firstAttribute="top" secondItem="ZDo-nM-9Xi" secondAttribute="bottom" constant="10" id="HJc-uh-rlG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9o1-wn-rsT" secondAttribute="trailing" constant="10" id="aSu-oJ-dLC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9o1-wn-rsT" secondAttribute="bottom" constant="10" id="yHK-cz-ozf"/>
+                            <constraint firstItem="ZDo-nM-9Xi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="zJY-0Z-zsP"/>
+                            <constraint firstItem="9o1-wn-rsT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ziy-iV-Dgm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="pRt-ai-SoS" id="MtH-IF-aW6"/>
+                        <outlet property="overlayView" destination="Kds-Nj-4ze" id="b0l-rB-9JJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
